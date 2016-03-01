@@ -14,6 +14,9 @@
 		207D9DA51C854A980066A5FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 207D9DA31C854A980066A5FE /* LaunchScreen.storyboard */; };
 		207D9DB01C854A980066A5FE /* parkourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D9DAF1C854A980066A5FE /* parkourTests.swift */; };
 		207D9DBB1C854A980066A5FE /* parkourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D9DBA1C854A980066A5FE /* parkourUITests.swift */; };
+		207D9DC91C854D3C0066A5FE /* pengin009.png in Resources */ = {isa = PBXBuildFile; fileRef = 207D9DC81C854D3C0066A5FE /* pengin009.png */; };
+		207D9DCB1C854E350066A5FE /* Obstacle01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D9DCA1C854E350066A5FE /* Obstacle01.swift */; };
+		207D9DCD1C8552310066A5FE /* building01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 207D9DCC1C8552310066A5FE /* building01.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		207D9DB61C854A980066A5FE /* parkourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parkourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		207D9DBA1C854A980066A5FE /* parkourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parkourUITests.swift; sourceTree = "<group>"; };
 		207D9DBC1C854A980066A5FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		207D9DC81C854D3C0066A5FE /* pengin009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pengin009.png; sourceTree = "<group>"; };
+		207D9DCA1C854E350066A5FE /* Obstacle01.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obstacle01.swift; sourceTree = "<group>"; };
+		207D9DCC1C8552310066A5FE /* building01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = building01.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,15 @@
 		207D9D991C854A980066A5FE /* parkour */ = {
 			isa = PBXGroup;
 			children = (
+				207D9DCC1C8552310066A5FE /* building01.jpg */,
+				207D9DC81C854D3C0066A5FE /* pengin009.png */,
 				207D9D9A1C854A980066A5FE /* AppDelegate.swift */,
 				207D9D9C1C854A980066A5FE /* ViewController.swift */,
 				207D9D9E1C854A980066A5FE /* Main.storyboard */,
 				207D9DA11C854A980066A5FE /* Assets.xcassets */,
 				207D9DA31C854A980066A5FE /* LaunchScreen.storyboard */,
 				207D9DA61C854A980066A5FE /* Info.plist */,
+				207D9DCA1C854E350066A5FE /* Obstacle01.swift */,
 			);
 			path = parkour;
 			sourceTree = "<group>";
@@ -231,6 +240,8 @@
 			files = (
 				207D9DA51C854A980066A5FE /* LaunchScreen.storyboard in Resources */,
 				207D9DA21C854A980066A5FE /* Assets.xcassets in Resources */,
+				207D9DCD1C8552310066A5FE /* building01.jpg in Resources */,
+				207D9DC91C854D3C0066A5FE /* pengin009.png in Resources */,
 				207D9DA01C854A980066A5FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				207D9DCB1C854E350066A5FE /* Obstacle01.swift in Sources */,
 				207D9D9D1C854A980066A5FE /* ViewController.swift in Sources */,
 				207D9D9B1C854A980066A5FE /* AppDelegate.swift in Sources */,
 			);
