@@ -9,18 +9,19 @@
 import Foundation
 import UIKit
 
-class Building {
+class Obstacle {
     var xpos:Float
     var ypos:Float
     var hight:Int
     var width:Int
-    let img:UIImage
+    let imgView:UIImageView
 
-    init(x:Float = 0, y:Float = 0, h:Int = 100, w:Int = 50, i:UIImage) {
+    init(x:Float, y:Float, h:Int, w:Int, img:UIImage) {
         self.xpos = x
         self.ypos = y
         self.hight = h
         self.width = w
-        self.img = i
+        self.imgView = UIImageView(image:img);
+        self.imgView.frame = CGRectMake(CGFloat(x), CGFloat(y), CGFloat(w), CGFloat(h));
     }
 }
