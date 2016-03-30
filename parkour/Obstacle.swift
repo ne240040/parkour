@@ -15,7 +15,7 @@ class Obstacle {
     var height:Int
     var width:Int
     let imgView:UIImageView
-    var speed:Float = 1.3
+    var speed:Float = 0
 
     init(x:Float, y:Float, h:Int, w:Int, img:UIImage) {
         self.xpos = x
