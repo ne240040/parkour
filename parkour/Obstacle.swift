@@ -15,6 +15,7 @@ class Obstacle {
     var hight:Int
     var width:Int
     let imgView:UIImageView
+    var speed:Float = 2.3
 
     init(x:Float, y:Float, h:Int, w:Int, img:UIImage) {
         self.xpos = x
@@ -23,5 +24,15 @@ class Obstacle {
         self.width = w
         self.imgView = UIImageView(image:img);
         self.imgView.frame = CGRectMake(CGFloat(x), CGFloat(y), CGFloat(w), CGFloat(h));
+    }
+    
+    func setXpos(x:Float) {
+        self.xpos = x
+        self.imgView.frame.origin.x = CGFloat(self.xpos)
+    }
+    
+    func move() {
+        self.xpos -= speed
+        self.imgView.frame.origin.x = CGFloat(self.xpos)
     }
 }

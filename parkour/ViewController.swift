@@ -10,14 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var player: UIImageView!
+    var timer : NSTimer!
+    var loop : MainLoop!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        if let build:UIImage? = UIImage(named: "building01.png") {
-            var b:Obstacle = Obstacle(x:Float(UIScreen.mainScreen().bounds.width)/2,y:Float(UIScreen.mainScreen().bounds.height)-100, h:100, w:50, img:build!)
-            self.view.addSubview(b.imgView)
-        }
+        
+        loop = MainLoop(mainView: self.view)
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: loop, selector: "update:", userInfo: nil, repeats: true)
     }
 
     override func didReceiveMemoryWarning() {
